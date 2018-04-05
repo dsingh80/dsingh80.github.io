@@ -14,22 +14,21 @@
             <link rel="stylesheet" href="./assets/css/animate.css"></link>
             <link rel="stylesheet" href="./styles.css"></link>
             <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
       </head>
       <body>
             <!--[if lt IE 7]>
                   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             <div id="main" class="container">
-                  <div  class="card animated fadeIn active"
-                        id="header"
-                        style="animation-delay: .5s"
-                        data-cardnum="0">
-                        <h1 style="color:#47A2E2">Damanveer Singh & Jeremy Rasor</h1>
-                        <h3>CSCI 44300 - Database Systems Final Project</h3>
+
+                  <!--  MAIN OVERVIEW  -->
+                  <div  id="header" class="card animated fadeIn active">
+                        <h1>Damanveer Singh & Jeremy Rasor</h1>
+                        <h3 style="color: #333">CSCI 44300 - Database Systems Final Project</h3>
                   </div>
-                  <div  class="card animated fadeIn active"
-                        style="animation-delay: 1s"
-                        data-cardnum="0">
+                  <!-- <div class="breaker"></div> -->
+                  <div  id="goal" class="card animated fadeIn active">
                         <div class="left">
                               <div id="text-content" class="animated bounceInLeft">
                                     <h1 style="color:#47A2E2">Goal</h1>
@@ -37,10 +36,13 @@
                                     <hr />
                                     <h1 style="color:#47A2E2">Progress</h1>
                                     <p>We've actually been doing research for a few weeks now and are well into the project. On <i>April 9th</i> we'll be presenting a piece of our project to the class as part of our honors contract!</p>
-                                    <ul>
-                                          <li>Researched numerous techniques in query plan tree optimization</li>
-                                          <li>Algorithms used to prepare databases to ready multiple queries</li>
-                                          <li>Role of cache in data access</li>
+                                    <ul id="todo-list">
+                                          <li class="done"><i class="far fa-check-circle"></i>  Researched numerous techniques in query plan tree optimization</li>
+                                          <li class="done"><i class="far fa-check-circle"></i>  Algorithms used to prepare databases to ready multiple queries</li>
+                                          <li class="done"><i class="far fa-check-circle"></i>  Role of cache in data access</li>
+                                          <li class="done"><i class="far fa-check-circle"></i>  Find datasets of various magnitudes to test on</li>
+                                          <li><i class="far fa-circle"></i>   Run test queries</li>
+                                          <li><i class="far fa-circle"></i>   Track & Analyze Results</li>
                                     </ul>
                               </div>
                         </div>
@@ -48,6 +50,14 @@
                               <div class="js-image" style="background-image: url(./imgs/db-1.png); opacity:.5"></div>
                         </div>
                   </div>
+                  <div class="breaker"></div>
+
+                  <!-- INPUT DATA OVERVIEW  -->
+
+
+                  <!-- TEST ANALYSIS -->
+
+
             </div>
 
             <script type="text/javascript" src="./interactivity.js"></script>

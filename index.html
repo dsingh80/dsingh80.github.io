@@ -9,11 +9,11 @@
             <title>Final Project | Damanveer Singh and Jeremy Rasor</title>
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway" rel="stylesheet">
             <link rel="stylesheet" href="./assets/css/normalize.css"></link>
             <link rel="stylesheet" href="./assets/css/animate.css"></link>
-            <link rel="stylesheet" href="./styles.css"></link>
-            <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+            <link rel="stylesheet" href="./light.css"></link>
+            <link rel="stylesheet" href="./section_divs.css"></link>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
       </head>
       <body>
@@ -22,42 +22,100 @@
             <![endif]-->
             <div id="main" class="container">
 
+                  <!-- Header -->
+                  <section id="header" class="inverted animated slideInDown active ss-style-doublediagonal bottom">
+                        <h1 class="title">Damanveer Singh & Jeremy Rasor</h1>
+                        <h1 class="subtitle" style="font-size: 1rem">CSCI 44300 - Database Systems Final Project</h1>
+                  </section>
+
+                  
                   <!--  MAIN OVERVIEW  -->
-                  <div  id="header" class="card animated fadeIn active">
-                        <h1>Damanveer Singh & Jeremy Rasor</h1>
-                        <h3 style="color: #333">CSCI 44300 - Database Systems Final Project</h3>
-                  </div>
-                  <!-- <div class="breaker"></div> -->
-                  <div  id="goal" class="card animated fadeIn active">
+                  <section id="goal" class="card animated fadeIn active">
                         <div class="left">
                               <div id="text-content" class="animated bounceInLeft">
-                                    <h1 style="color:#47A2E2">Goal</h1>
-                                    <p>To study the effects of multiple query optimization techniques on various magnitudes of data</p>
+                                    <h1 class="title">Goal</h1>
+                                    <p>To study the effects of various query structures on different levels of data</p>
                                     <hr />
-                                    <h1 style="color:#47A2E2">Progress</h1>
-                                    <p>We've actually been doing research for a few weeks now and are well into the project. On <i>April 9th</i> we'll be presenting a piece of our project to the class as part of our honors contract!</p>
+                                    <h1 class="title">Progress</h1>
+                                    <p>We've done research on query optimization techniques and caching mechanisms used by SSMS. <br/>Now, we're hoping to find patterns in query structures to see how they effect execution time.</p>
                                     <ul id="todo-list">
                                           <li class="done"><i class="far fa-check-circle"></i>  Researched numerous techniques in query plan tree optimization</li>
                                           <li class="done"><i class="far fa-check-circle"></i>  Algorithms used to prepare databases to ready multiple queries</li>
                                           <li class="done"><i class="far fa-check-circle"></i>  Role of cache in data access</li>
                                           <li class="done"><i class="far fa-check-circle"></i>  Find datasets of various magnitudes to test on</li>
-                                          <li><i class="far fa-circle"></i>   Run test queries</li>
-                                          <li><i class="far fa-circle"></i>   Track & Analyze Results</li>
+                                          <li class="done"><i class="far fa-check-circle"></i>  Run test queries</li>
+                                          <li class="done"><i class="far fa-check-circle"></i>  Analyze Results</li>
                                     </ul>
                               </div>
                         </div>
                         <div class="right">
-                              <div class="js-image" style="background-image: url(./imgs/db-1.png); opacity:.5"></div>
+                              <div class="js-image" style="background-image: url(./imgs/db-1.png); opacity:1"></div>
                         </div>
-                  </div>
-                  <div class="breaker"></div>
+                  </section>
+
 
                   <!-- INPUT DATA OVERVIEW  -->
+                  <section id="input_data" class="inverted">
+                        <h1 class="title">Input Datasets</h1>
+                        <div class="breaker"></div>
+                        <ul>
+                              <li>
+                                    <h1 class="title">Toy Products</h1>
+                                    <h1 class="subtitle">9MB, 17 columns</h1>
+                                    <div class="breaker"></div>
+                                    <p>10000 records of information on toy product sales on Amazon</p>
+                                    <p class="magnitude_tag"style="background-color: #00E676">Small</p>
+                              </li>
+                              <li>
+                                    <h1 class="title">Library Checkouts</h1>
+                                    <h1 class="subtitle">1GB, 6 columns</h1>
+                                    <div class="breaker"></div>
+                                    <p>Log of Physical item checkouts from Seattle Public Library</p>
+                                    <p class="magnitude_tag"style="background-color: #FDD835">Large</p>
+                              </li>
+                              <li>
+                                    <h1 class="title">London Crime</h1>
+                                    <h1 class="subtitle">3.3GB, 7 columns</h1>
+                                    <div class="breaker"></div>
+                                    <p>Crimes in London by borough, category, and month from 2008-2016</p>
+                                    <p class="magnitude_tag"style="background-color: #FF5252">Big</p>
+                              </li>
+                        </ul>
+                        <svg class="sectionDiv bottom" xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+                              <path d="M0 0 L50 100 L100 0 Z" />
+                        </svg>
+                  </section>
 
+                  <!-- METHODOLOGY -->
+                  <section id="methodology">
+                        <h1 class="title">Methodology</h1>
+                        <div class="breaker"></div>
+                        <p>We created 4 databases using CSV files of the datasets shown above.<br/>
+                              Once imported into SSMS, we iterated over each dataset with a query that met specific qualifications.<br/>
+                              Each query contained a set number of columns to return and was classified by the size of the dataset and the SQL operation used (SELECT, UPDATE, DELETE).<br/>
+                              When the query finished executing, the total execution time per query (in milliseconds) was recorded.<br/>
+                              Query times were provided by the T-SQL operation<br/>
+                              <span>
+                                    <code>SET STATISTICS TIME ON</code>
+                              </span><br/>
+                              The results were compiled into an Excel spreadsheet to be analyzed for patterns.
+                        </p>
+                  </section>
 
                   <!-- TEST ANALYSIS -->
-
-
+                  
+                  <section id="results" class="inverted ss-style-doublediagonal">
+                        <h1 class="title">Results</h1>
+                        <div class="breaker"></div>
+                        <p>We created 4 databases using CSV files of the datasets shown above.<br/>
+                              Once imported into SSMS, we iterated over each dataset with a query that met specific qualifications.<br/>
+                              Each query contained a set number of columns to return and was classified by the size of the dataset and the SQL operation used (SELECT, UPDATE, DELETE).<br/>
+                              When the query finished executing, the total execution time per query (in milliseconds) was recorded.<br/>
+                              Query times were provided by the T-SQL operation<br/>
+                              The results were compiled into an Excel spreadsheet to be analyzed for patterns.
+                        </p>
+                  </section>
+                  
             </div>
 
             <script type="text/javascript" src="./interactivity.js"></script>

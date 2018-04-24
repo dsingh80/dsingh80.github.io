@@ -1,0 +1,93 @@
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	padding-top: 6em;
+	background: #2072a7;
+}
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+      top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	transform: rotate(-2deg);
+	transform-origin: 0 0;
+}
+.ss-style-doublediagonal::before {
+	height: 50%;
+	background: #116094;
+	transform: rotate(-3deg);
+	transform-origin: 3% 0;
+}
+.ss-style-doublediagonal.bottom::before {
+      top: initial;
+      bottom: 0;
+      transform: rotate(3deg);
+}
+.ss-style-doublediagonal.bottom::after {
+      top: initial;
+      bottom: 0;
+      transform: rotate(2deg);
+}
+
+
+
+.ss-style-inczigzag::before,
+.ss-style-inczigzag::after {
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-size: 100px 100%;
+}
+.ss-style-inczigzag::before {
+	top: 0;
+	background-image: linear-gradient(15deg, #3498DB 50%, #2C3E50 50%);
+}
+.ss-style-inczigzag::after {
+	bottom: 0;
+	background-image: linear-gradient(15deg, #2C3E50 50%, #3498DB 50%);
+}
+
+
+
+.ss-style-foldedcorner::before,
+.ss-style-foldedcorner::after {
+	top: -100px;
+	width: 100px;
+	height: 100px;
+}
+.ss-style-foldedcorner::before{
+      width: calc(100vw - 100px);
+}
+.ss-style-foldedcorner::before {
+	left: 100px;
+	background-image: linear-gradient(-45deg, #3498DB 50%, #37a2ea 50%);
+}
+.ss-style-foldedcorner::after {
+	left: 0;
+	background-image: linear-gradient(-45deg, #236fa1 50%, transparent 50%);
+}
+.ss-style-dot::before {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background: inherit; 
+}
+.ss-style-dot.top::before {
+      top: -50px;
+}
+.ss-style-dot.bottom::before {
+      bottom: -50px;
+}

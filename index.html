@@ -26,6 +26,7 @@
                   <section id="header" class="inverted animated slideInDown active ss-style-doublediagonal bottom">
                         <h1 class="title">Damanveer Singh & Jeremy Rasor</h1>
                         <h1 class="subtitle" style="font-size: 1rem">CSCI 44300 - Database Systems Final Project</h1>
+                        <h1 class="subtitle" style="font-size: .8rem">A painstakingly executed research idea</h1>
                   </section>
 
                   
@@ -94,9 +95,15 @@
                               Once imported into SSMS, we iterated over each dataset with a query that met specific qualifications.<br/>
                               Each query contained a set number of columns to return and was classified by the size of the dataset and the SQL operation used (SELECT, UPDATE, DELETE).<br/>
                               When the query finished executing, the total execution time per query (in milliseconds) was recorded.<br/>
+                              After the simple SQL operators were tested, we tested more abstract ideas that could moreso be influenced by implementation.
+                              Firstly, we tested SSMS's caching mechanism by executing multiple SELECT statements in a single query. Each statement retrieved the same data as the previous but with one additional column; this way,
+                              if the data were being cached, each query would get progressively faster than it was when we tested purely by number of columns (see above).
+                              Then, we tested the DROP command on both tables and databases alike... because why not.
                               Query times were provided by the T-SQL operation<br/>
                               <span>
-                                    <code>SET STATISTICS TIME ON</code>
+                                    <br/>
+                                    <code style="color: rgb(0,162,255)">SET STATISTICS TIME ON</code>
+                                    <br/>
                               </span><br/>
                               The results were compiled into an Excel spreadsheet to be analyzed for patterns.
                         </p>
@@ -107,13 +114,20 @@
                   <section id="results" class="inverted ss-style-doublediagonal">
                         <h1 class="title">Results</h1>
                         <div class="breaker"></div>
-                        <p>We created 4 databases using CSV files of the datasets shown above.<br/>
-                              Once imported into SSMS, we iterated over each dataset with a query that met specific qualifications.<br/>
-                              Each query contained a set number of columns to return and was classified by the size of the dataset and the SQL operation used (SELECT, UPDATE, DELETE).<br/>
-                              When the query finished executing, the total execution time per query (in milliseconds) was recorded.<br/>
-                              Query times were provided by the T-SQL operation<br/>
-                              The results were compiled into an Excel spreadsheet to be analyzed for patterns.
+                        <p>
+                              Our results were far from expected. The relationship between <b>number of columns accessed</b> by a single query <b>followed a sinusoidal curve pattern</b>. In other words, as the number of
+                              columns increased, the execution time of the query would follow a repeating pattern of increase then decrease then increase again. We confirmed that <b>this was not due to repeated
+                              access of the same data</b> by running multiple queries accessing the same data with an additional column requested each time; this change showed little to no influence on the execution
+                              time of the query. We're still unsure as to why this pattern occurs and are currently researching this matter further.
                         </p>
+                        <br/>
+                        <p>
+                              Another trend in the data showed a strong correlation between the datatypes of the columns accessed and the execution time. <b>Columns with more complex datatypes</b> such as "text" and "numeric"
+                              <b>were significantly more expensive</b> to access than primitive datatypes (like integers). This change was accounted for in our tests and has no known influence on the results shared earlier.
+                              Correspondingly, tables with primary keys returned queries in nearly half the time as tables lacking in any key. Even on our big dataset, our projected execution times were nearly double that of what was
+                              observed. This is partially due to optimization and caching mechanisms implemented by SSMS.
+                        </p>
+                        <div id="stats" style="background-image: url('./imgs/stats.png')"></div>
                   </section>
                   
             </div>

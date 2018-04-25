@@ -273,3 +273,14 @@ section#results {
       margin: auto;
       text-align: left;
 }
+#results #stats {
+      display: block;
+      width: 668px;
+      height: 401px;
+      margin: 1rem auto;
+      background-image: url('./imgs/stats.png');
+      transition: transform .5s ease-in-out;
+}
+#results #stats:hover {
+      transform: scale(1.5) translateY(-30%);
+}

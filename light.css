@@ -236,6 +236,7 @@ section#input_data .magnitude_tag {
       line-height: .8em;
 } 
 #input_data li h1.subtitle {
+      color: #666;
       font-size: 1em;
 }
 #input_data li p {

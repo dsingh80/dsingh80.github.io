@@ -19,6 +19,10 @@ body {
       overflow-x: hidden;
       color: #ECF0F1;
 }
+a, a:visited, a:link, a:hover, a:active {
+      text-decoration: none;
+      color: inherit;
+}
 h1 {
       font-size: 1.2rem;
       font-weight: 600;
@@ -208,7 +212,7 @@ section#input_data .magnitude_tag {
 }
 #input_data ul {
       list-style-type: none;
-      margin: 0;
+      /* margin: 0; */
       padding: 0 20px;
       text-align: center;
 }
@@ -283,4 +287,19 @@ section#results {
 }
 #results #stats:hover {
       transform: scale(1.5) translateY(-30%);
+}
+
+
+section#project_details {
+}
+
+#project_details p, ul {
+      display: block;
+      width: 70vw;
+      margin: auto;
+      text-align: left;
+}
+#project_details ul#cites {
+      font-size: .8rem;
+      margin-top: 1rem;
 }

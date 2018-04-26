@@ -197,9 +197,6 @@ section#input_data {
       /* background-color: #E74C3C; */
       margin-top: 1rem;
 }
-section#input_data svg.sectionDiv {
-      /* fill: #E74C3C; */
-}
 section#input_data .magnitude_tag {
       margin: auto 5px;
       vertical-align: top;
@@ -291,9 +288,8 @@ section#results {
 }
 
 
-section#project_details {
-}
 
+/* Project Details */
 #project_details p, ul {
       display: block;
       width: 70vw;

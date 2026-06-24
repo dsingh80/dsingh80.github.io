@@ -3,5 +3,7 @@ node_modules
 *.local
 .DS_Store
 
+.serena
+
 # Local copy of baseline design reference (large)
 public/baseline-template.html

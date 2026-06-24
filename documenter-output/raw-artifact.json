@@ -1,0 +1,121 @@
+{
+  "project_hint": {
+    "name": "Personal Website Frontend",
+    "slug": "personal-website-frontend",
+    "description": "Vue 3 + Vite + TypeScript personal portfolio SPA with typed content modules, section-composed homepage, and GitHub Pages deployment",
+    "domain": "personal branding / portfolio",
+    "role": "Static personal website showcasing career stories, projects, and resume"
+  },
+  "technologies_found": [
+    {
+      "name": "Vue 3",
+      "evidence": ["package.json", "src/main.ts", "src/App.vue", "src/pages/HomePage.vue"],
+      "role_in_project": "Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props",
+      "typical_purpose": "Progressive JavaScript framework for building reactive user interfaces",
+      "advantages_over_alternatives": "Lightweight runtime for a content-heavy static site; script setup keeps section components concise without a global state library",
+      "alternatives_considered": "React, Astro, plain HTML",
+      "measurable_outcomes": [],
+      "evidence_strength": "documented"
+    },
+    {
+      "name": "Vite",
+      "evidence": ["package.json", "vite.config.ts", ".github/workflows/deploy-pages.yml"],
+      "role_in_project": "Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules",
+      "typical_purpose": "Fast frontend build tool with native ESM dev server and Rollup-based production builds",
+      "advantages_over_alternatives": "Near-instant HMR for iterative content and layout work; vue-tsc + vite build script enforces type-check before static output",
+      "alternatives_considered": "Webpack, Parcel, Nuxt",
+      "measurable_outcomes": [],
+      "evidence_strength": "documented"
+    },
+    {
+      "name": "TypeScript",
+      "evidence": ["package.json", "tsconfig.json", "src/types/content.ts", "src/content/home.ts"],
+      "role_in_project": "Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract",
+      "typical_purpose": "Static typing for JavaScript applications to catch schema drift at compile time",
+      "advantages_over_alternatives": "Content modules import types from a single contract file; vue-tsc blocks builds when section props or content shapes diverge",
+      "alternatives_considered": "Plain JavaScript, JSDoc-only typing",
+      "measurable_outcomes": [],
+      "evidence_strength": "documented"
+    },
+    {
+      "name": "Vue Router",
+      "evidence": ["package.json", "src/router/index.ts", "src/layouts/PageShell.vue"],
+      "role_in_project": "SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior",
+      "typical_purpose": "Official client-side router for Vue.js single-page applications",
+      "advantages_over_alternatives": "Code-split page bundles via dynamic import(); createWebHistory suits GitHub Pages hosting behind a static dist output",
+      "alternatives_considered": "Multi-page static HTML, TanStack Router",
+      "measurable_outcomes": [],
+      "evidence_strength": "documented"
+    },
+    {
+      "name": "CSS custom properties",
+      "evidence": ["src/styles/tokens.css", "src/styles/index.css"],
+      "role_in_project": "Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles",
+      "typical_purpose": "Design tokens as CSS variables for consistent theming without a CSS preprocessor",
+      "advantages_over_alternatives": "No Tailwind or Sass dependency; layered @import chain (tokens → base → patterns → layout → section-components) keeps styling maintainable for a small site",
+      "alternatives_considered": "Tailwind CSS, SCSS modules, CSS-in-JS",
+      "measurable_outcomes": [],
+      "evidence_strength": "documented"
+    },
+    {
+      "name": "GitHub Actions",
+      "evidence": [".github/workflows/deploy-pages.yml", "CNAME"],
+      "role_in_project": "CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com",
+      "typical_purpose": "Hosted CI/CD for building and deploying repositories",
+      "advantages_over_alternatives": "Free static hosting integrated with the repo; no separate CDN or server config beyond Pages permissions and CNAME",
+      "alternatives_considered": "Netlify, Vercel, manual FTP deploy",
+      "measurable_outcomes": [],
+      "evidence_strength": "documented"
+    }
+  ],
+  "patterns_found": [
+    {
+      "name": "Content-as-data modules",
+      "description": "Homepage, projects, and about copy live in src/content/*.ts as typed exports rather than hard-coded in templates",
+      "role_in_project": "Separates editorial content from presentation so copy updates do not require touching Vue markup",
+      "advantages_over_alternatives": "TypeScript interfaces enforce section shape; easier to diff content changes than scattered template strings"
+    },
+    {
+      "name": "Section composition",
+      "description": "HomePage imports discrete section SFCs (HeroSection, TimelineSection, etc.) and passes slices of homeContent as props",
+      "role_in_project": "Maps each homepage anchor (stories, career, stack, about) to an isolated component with a narrow prop contract",
+      "advantages_over_alternatives": "Each section can evolve independently; jump-nav hrefs align with section IDs without a monolithic homepage template"
+    },
+    {
+      "name": "Lazy route loading",
+      "description": "Router routes use () => import('@/pages/...') for all page components",
+      "role_in_project": "Splits project detail and secondary pages into separate chunks loaded on navigation",
+      "advantages_over_alternatives": "Smaller initial bundle for the homepage-first visitor path; standard Vue Router pattern without extra lazy-load library"
+    },
+    {
+      "name": "Layout shell",
+      "description": "App.vue renders PageShell which owns site chrome (header nav, mobile menu) and RouterView for page content",
+      "role_in_project": "Keeps navigation and accessibility scaffolding in one layout while pages focus on section content",
+      "advantages_over_alternatives": "Consistent nav and mobile toggle behavior across routes without duplicating header markup per page"
+    }
+  ],
+  "accomplishments_found": [
+    {
+      "title": "Typed content-driven portfolio SPA",
+      "technologies": ["Vue 3", "TypeScript", "Vite"],
+      "role_in_project": "Personal portfolio SPA where homepage sections and project case studies are driven by typed content modules and composed section components",
+      "advantages_over_alternatives": "Editorial updates stay in TypeScript content files with compile-time validation instead of a CMS or markdown pipeline for a single-author site",
+      "measurable_outcome": null,
+      "evidence_strength": "documented"
+    },
+    {
+      "title": "GitHub Pages static deployment",
+      "technologies": ["GitHub Actions", "Vite"],
+      "role_in_project": "Automated build-and-deploy pipeline producing static dist output to GitHub Pages with custom domain CNAME",
+      "advantages_over_alternatives": "Zero server maintenance; push-to-master triggers type-checked production build and Pages deploy",
+      "measurable_outcome": null,
+      "evidence_strength": "documented"
+    }
+  ],
+  "architecture_notes": [
+    "Static SPA: Vite builds to dist/; GitHub Pages serves index.html and assets with createWebHistory routing (no SSR).",
+    "Data flow: src/content/*.ts exports → page/section components via typed props → scoped or global CSS from tokens.css layer chain.",
+    "Project detail pages resolve slugs via getProjectBySlug in projects.ts and render fullStory blocks split by paragraph.",
+    "Resume PDF served from public/DamanveerSingh_Resume.pdf; portable Node under .tools/ optional for Windows environments without system npm."
+  ]
+}

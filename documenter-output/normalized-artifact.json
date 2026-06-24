@@ -1,0 +1,277 @@
+{
+  "project": {
+    "slug": "personal-website-frontend",
+    "name": "Personal Website Frontend",
+    "description": "Vue 3 + Vite + TypeScript personal portfolio SPA with typed content modules, section-composed homepage, and GitHub Pages deployment",
+    "metadata": {
+      "domain": "personal branding / portfolio",
+      "role": "Static personal website showcasing career stories, projects, and resume"
+    }
+  },
+  "memories": [
+    {
+      "scope": "project",
+      "category": "accomplishment",
+      "title": "Typed content-driven portfolio SPA",
+      "content": "Typed content-driven portfolio SPA\n\nRole in project: Personal portfolio SPA where homepage sections and project case studies are driven by typed content modules and composed section components\n\nAdvantages over alternatives: Editorial updates stay in TypeScript content files with compile-time validation instead of a CMS or markdown pipeline for a single-author site\n\nAdoption rationale: Personal portfolio SPA where homepage sections and project case studies are driven by typed content modules and composed section components. Advantages over alternatives: Editorial updates stay in TypeScript content files with compile-time validation instead of a CMS or markdown pipeline for a single-author site.\n\nUsed Vue 3, TypeScript, Vite as Personal portfolio SPA where homepage sections and project case studies are driven by typed content modules and composed section components, leveraging Editorial updates stay in TypeScript content files with compile-time validation instead of a CMS or markdown pipeline for a single-author site.",
+      "technologies": [
+        "Vue 3",
+        "TypeScript",
+        "Vite"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "Personal portfolio SPA where homepage sections and project case studies are driven by typed content modules and composed section components",
+      "typical_purpose": null,
+      "advantages_over_alternatives": "Editorial updates stay in TypeScript content files with compile-time validation instead of a CMS or markdown pipeline for a single-author site",
+      "adoption_rationale": "Personal portfolio SPA where homepage sections and project case studies are driven by typed content modules and composed section components. Advantages over alternatives: Editorial updates stay in TypeScript content files with compile-time validation instead of a CMS or markdown pipeline for a single-author site.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used Vue 3, TypeScript, Vite as Personal portfolio SPA where homepage sections and project case studies are driven by typed content modules and composed section components, leveraging Editorial updates stay in TypeScript content files with compile-time validation instead of a CMS or markdown pipeline for a single-author site.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "accomplishment",
+      "title": "GitHub Pages static deployment",
+      "content": "GitHub Pages static deployment\n\nRole in project: Automated build-and-deploy pipeline producing static dist output to GitHub Pages with custom domain CNAME\n\nAdvantages over alternatives: Zero server maintenance; push-to-master triggers type-checked production build and Pages deploy\n\nAdoption rationale: Automated build-and-deploy pipeline producing static dist output to GitHub Pages with custom domain CNAME. Advantages over alternatives: Zero server maintenance; push-to-master triggers type-checked production build and Pages deploy.\n\nUsed GitHub Actions, Vite as Automated build-and-deploy pipeline producing static dist output to GitHub Pages with custom domain CNAME, leveraging Zero server maintenance; push-to-master triggers type-checked production build and Pages deploy.",
+      "technologies": [
+        "GitHub Actions",
+        "Vite"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "Automated build-and-deploy pipeline producing static dist output to GitHub Pages with custom domain CNAME",
+      "typical_purpose": null,
+      "advantages_over_alternatives": "Zero server maintenance; push-to-master triggers type-checked production build and Pages deploy",
+      "adoption_rationale": "Automated build-and-deploy pipeline producing static dist output to GitHub Pages with custom domain CNAME. Advantages over alternatives: Zero server maintenance; push-to-master triggers type-checked production build and Pages deploy.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used GitHub Actions, Vite as Automated build-and-deploy pipeline producing static dist output to GitHub Pages with custom domain CNAME, leveraging Zero server maintenance; push-to-master triggers type-checked production build and Pages deploy.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "technology",
+      "title": "Vue 3",
+      "content": "Vue 3: Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props\n\nRole in project: Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props\n\nTypical purpose: Progressive JavaScript framework for building reactive user interfaces\n\nAdvantages over alternatives: Lightweight runtime for a content-heavy static site; script setup keeps section components concise without a global state library\n\nAdoption rationale: Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props. Advantages over alternatives: Lightweight runtime for a content-heavy static site; script setup keeps section components concise without a global state library.\n\nUsed Vue 3 as Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props, leveraging Lightweight runtime for a content-heavy static site; script setup keeps section components concise without a global state library.",
+      "technologies": [
+        "Vue 3"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props",
+      "typical_purpose": "Progressive JavaScript framework for building reactive user interfaces",
+      "advantages_over_alternatives": "Lightweight runtime for a content-heavy static site; script setup keeps section components concise without a global state library",
+      "adoption_rationale": "Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props. Advantages over alternatives: Lightweight runtime for a content-heavy static site; script setup keeps section components concise without a global state library.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used Vue 3 as Renders the SPA with Composition API script-setup SFCs; HomePage composes section components fed by typed content props, leveraging Lightweight runtime for a content-heavy static site; script setup keeps section components concise without a global state library.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "technology",
+      "title": "Vite",
+      "content": "Vite: Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules\n\nRole in project: Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules\n\nTypical purpose: Fast frontend build tool with native ESM dev server and Rollup-based production builds\n\nAdvantages over alternatives: Near-instant HMR for iterative content and layout work; vue-tsc + vite build script enforces type-check before static output\n\nAdoption rationale: Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules. Advantages over alternatives: Near-instant HMR for iterative content and layout work; vue-tsc + vite build script enforces type-check before static output.\n\nUsed Vite as Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules, leveraging Near-instant HMR for iterative content and layout work; vue-tsc + vite build script enforces type-check before static output.",
+      "technologies": [
+        "Vite"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules",
+      "typical_purpose": "Fast frontend build tool with native ESM dev server and Rollup-based production builds",
+      "advantages_over_alternatives": "Near-instant HMR for iterative content and layout work; vue-tsc + vite build script enforces type-check before static output",
+      "adoption_rationale": "Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules. Advantages over alternatives: Near-instant HMR for iterative content and layout work; vue-tsc + vite build script enforces type-check before static output.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used Vite as Dev server, production bundler, and @ alias resolver mapping @ to src for imports across pages and content modules, leveraging Near-instant HMR for iterative content and layout work; vue-tsc + vite build script enforces type-check before static output.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "technology",
+      "title": "TypeScript",
+      "content": "TypeScript: Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract\n\nRole in project: Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract\n\nTypical purpose: Static typing for JavaScript applications to catch schema drift at compile time\n\nAdvantages over alternatives: Content modules import types from a single contract file; vue-tsc blocks builds when section props or content shapes diverge\n\nAdoption rationale: Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract. Advantages over alternatives: Content modules import types from a single contract file; vue-tsc blocks builds when section props or content shapes diverge.\n\nUsed TypeScript as Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract, leveraging Content modules import types from a single contract file; vue-tsc blocks builds when section props or content shapes diverge.",
+      "technologies": [
+        "TypeScript"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract",
+      "typical_purpose": "Static typing for JavaScript applications to catch schema drift at compile time",
+      "advantages_over_alternatives": "Content modules import types from a single contract file; vue-tsc blocks builds when section props or content shapes diverge",
+      "adoption_rationale": "Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract. Advantages over alternatives: Content modules import types from a single contract file; vue-tsc blocks builds when section props or content shapes diverge.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used TypeScript as Defines HomePageContent, ProjectEntry, and related interfaces so homepage and project pages share a typed content contract, leveraging Content modules import types from a single contract file; vue-tsc blocks builds when section props or content shapes diverge.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "technology",
+      "title": "Vue Router",
+      "content": "Vue Router: SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior\n\nRole in project: SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior\n\nTypical purpose: Official client-side router for Vue.js single-page applications\n\nAdvantages over alternatives: Code-split page bundles via dynamic import(); createWebHistory suits GitHub Pages hosting behind a static dist output\n\nAdoption rationale: SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior. Advantages over alternatives: Code-split page bundles via dynamic import(); createWebHistory suits GitHub Pages hosting behind a static dist output.\n\nUsed Vue Router as SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior, leveraging Code-split page bundles via dynamic import(); createWebHistory suits GitHub Pages hosting behind a static dist output.",
+      "technologies": [
+        "Vue Router"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior",
+      "typical_purpose": "Official client-side router for Vue.js single-page applications",
+      "advantages_over_alternatives": "Code-split page bundles via dynamic import(); createWebHistory suits GitHub Pages hosting behind a static dist output",
+      "adoption_rationale": "SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior. Advantages over alternatives: Code-split page bundles via dynamic import(); createWebHistory suits GitHub Pages hosting behind a static dist output.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used Vue Router as SPA routing for home, project detail (slug param), about, resume, and contact with lazy-loaded page components and scroll-to-top behavior, leveraging Code-split page bundles via dynamic import(); createWebHistory suits GitHub Pages hosting behind a static dist output.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "technology",
+      "title": "CSS custom properties",
+      "content": "CSS custom properties: Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles\n\nRole in project: Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles\n\nTypical purpose: Design tokens as CSS variables for consistent theming without a CSS preprocessor\n\nAdvantages over alternatives: No Tailwind or Sass dependency; layered @import chain (tokens → base → patterns → layout → section-components) keeps styling maintainable for a small site\n\nAdoption rationale: Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles. Advantages over alternatives: No Tailwind or Sass dependency; layered @import chain (tokens → base → patterns → layout → section-components) keeps styling maintainable for a small site.\n\nUsed CSS custom properties as Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles, leveraging No Tailwind or Sass dependency; layered @import chain (tokens → base → patterns → layout → section-components) keeps styling maintainable for a small site.",
+      "technologies": [
+        "CSS custom properties"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles",
+      "typical_purpose": "Design tokens as CSS variables for consistent theming without a CSS preprocessor",
+      "advantages_over_alternatives": "No Tailwind or Sass dependency; layered @import chain (tokens → base → patterns → layout → section-components) keeps styling maintainable for a small site",
+      "adoption_rationale": "Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles. Advantages over alternatives: No Tailwind or Sass dependency; layered @import chain (tokens → base → patterns → layout → section-components) keeps styling maintainable for a small site.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used CSS custom properties as Centralizes dark-theme palette, typography scale, spacing, and accent colors consumed by layout and section component styles, leveraging No Tailwind or Sass dependency; layered @import chain (tokens → base → patterns → layout → section-components) keeps styling maintainable for a small site.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "technology",
+      "title": "GitHub Actions",
+      "content": "GitHub Actions: CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com\n\nRole in project: CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com\n\nTypical purpose: Hosted CI/CD for building and deploying repositories\n\nAdvantages over alternatives: Free static hosting integrated with the repo; no separate CDN or server config beyond Pages permissions and CNAME\n\nAdoption rationale: CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com. Advantages over alternatives: Free static hosting integrated with the repo; no separate CDN or server config beyond Pages permissions and CNAME.\n\nUsed GitHub Actions as CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com, leveraging Free static hosting integrated with the repo; no separate CDN or server config beyond Pages permissions and CNAME.",
+      "technologies": [
+        "GitHub Actions"
+      ],
+      "tags": [
+        "resume"
+      ],
+      "role_in_project": "CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com",
+      "typical_purpose": "Hosted CI/CD for building and deploying repositories",
+      "advantages_over_alternatives": "Free static hosting integrated with the repo; no separate CDN or server config beyond Pages permissions and CNAME",
+      "adoption_rationale": "CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com. Advantages over alternatives: Free static hosting integrated with the repo; no separate CDN or server config beyond Pages permissions and CNAME.",
+      "measurable_outcome": null,
+      "evidence_strength": "documented",
+      "resume_statement": "Used GitHub Actions as CI pipeline on master push: npm ci, vue-tsc + vite build, upload dist artifact, deploy to GitHub Pages with custom domain therealdom.com, leveraging Free static hosting integrated with the repo; no separate CDN or server config beyond Pages permissions and CNAME.",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "pattern",
+      "title": "Content-as-data modules",
+      "content": "Content-as-data modules: Homepage, projects, and about copy live in src/content/*.ts as typed exports rather than hard-coded in templates\n\nRole in project: Separates editorial content from presentation so copy updates do not require touching Vue markup\n\nAdvantages over alternatives: TypeScript interfaces enforce section shape; easier to diff content changes than scattered template strings\n\nAdoption rationale: Separates editorial content from presentation so copy updates do not require touching Vue markup. Advantages over alternatives: TypeScript interfaces enforce section shape; easier to diff content changes than scattered template strings.",
+      "technologies": [],
+      "tags": [],
+      "role_in_project": "Separates editorial content from presentation so copy updates do not require touching Vue markup",
+      "typical_purpose": null,
+      "advantages_over_alternatives": "TypeScript interfaces enforce section shape; easier to diff content changes than scattered template strings",
+      "adoption_rationale": "Separates editorial content from presentation so copy updates do not require touching Vue markup. Advantages over alternatives: TypeScript interfaces enforce section shape; easier to diff content changes than scattered template strings.",
+      "measurable_outcome": null,
+      "evidence_strength": "inferred",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "pattern",
+      "title": "Section composition",
+      "content": "Section composition: HomePage imports discrete section SFCs (HeroSection, TimelineSection, etc.) and passes slices of homeContent as props\n\nRole in project: Maps each homepage anchor (stories, career, stack, about) to an isolated component with a narrow prop contract\n\nAdvantages over alternatives: Each section can evolve independently; jump-nav hrefs align with section IDs without a monolithic homepage template\n\nAdoption rationale: Maps each homepage anchor (stories, career, stack, about) to an isolated component with a narrow prop contract. Advantages over alternatives: Each section can evolve independently; jump-nav hrefs align with section IDs without a monolithic homepage template.",
+      "technologies": [],
+      "tags": [],
+      "role_in_project": "Maps each homepage anchor (stories, career, stack, about) to an isolated component with a narrow prop contract",
+      "typical_purpose": null,
+      "advantages_over_alternatives": "Each section can evolve independently; jump-nav hrefs align with section IDs without a monolithic homepage template",
+      "adoption_rationale": "Maps each homepage anchor (stories, career, stack, about) to an isolated component with a narrow prop contract. Advantages over alternatives: Each section can evolve independently; jump-nav hrefs align with section IDs without a monolithic homepage template.",
+      "measurable_outcome": null,
+      "evidence_strength": "inferred",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "pattern",
+      "title": "Lazy route loading",
+      "content": "Lazy route loading: Router routes use () => import('@/pages/...') for all page components\n\nRole in project: Splits project detail and secondary pages into separate chunks loaded on navigation\n\nAdvantages over alternatives: Smaller initial bundle for the homepage-first visitor path; standard Vue Router pattern without extra lazy-load library\n\nAdoption rationale: Splits project detail and secondary pages into separate chunks loaded on navigation. Advantages over alternatives: Smaller initial bundle for the homepage-first visitor path; standard Vue Router pattern without extra lazy-load library.",
+      "technologies": [],
+      "tags": [],
+      "role_in_project": "Splits project detail and secondary pages into separate chunks loaded on navigation",
+      "typical_purpose": null,
+      "advantages_over_alternatives": "Smaller initial bundle for the homepage-first visitor path; standard Vue Router pattern without extra lazy-load library",
+      "adoption_rationale": "Splits project detail and secondary pages into separate chunks loaded on navigation. Advantages over alternatives: Smaller initial bundle for the homepage-first visitor path; standard Vue Router pattern without extra lazy-load library.",
+      "measurable_outcome": null,
+      "evidence_strength": "inferred",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "pattern",
+      "title": "Layout shell",
+      "content": "Layout shell: App.vue renders PageShell which owns site chrome (header nav, mobile menu) and RouterView for page content\n\nRole in project: Keeps navigation and accessibility scaffolding in one layout while pages focus on section content\n\nAdvantages over alternatives: Consistent nav and mobile toggle behavior across routes without duplicating header markup per page\n\nAdoption rationale: Keeps navigation and accessibility scaffolding in one layout while pages focus on section content. Advantages over alternatives: Consistent nav and mobile toggle behavior across routes without duplicating header markup per page.",
+      "technologies": [],
+      "tags": [],
+      "role_in_project": "Keeps navigation and accessibility scaffolding in one layout while pages focus on section content",
+      "typical_purpose": null,
+      "advantages_over_alternatives": "Consistent nav and mobile toggle behavior across routes without duplicating header markup per page",
+      "adoption_rationale": "Keeps navigation and accessibility scaffolding in one layout while pages focus on section content. Advantages over alternatives: Consistent nav and mobile toggle behavior across routes without duplicating header markup per page.",
+      "measurable_outcome": null,
+      "evidence_strength": "inferred",
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "architecture",
+      "title": "Static SPA: Vite builds to dist/; GitHub Pages serves index.html and assets with...",
+      "content": "Static SPA: Vite builds to dist/; GitHub Pages serves index.html and assets with createWebHistory routing (no SSR).",
+      "technologies": [],
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "architecture",
+      "title": "Data flow: src/content/*.ts exports → page/section components via typed props → ...",
+      "content": "Data flow: src/content/*.ts exports → page/section components via typed props → scoped or global CSS from tokens.css layer chain.",
+      "technologies": [],
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "architecture",
+      "title": "Project detail pages resolve slugs via getProjectBySlug in projects.ts and rende...",
+      "content": "Project detail pages resolve slugs via getProjectBySlug in projects.ts and render fullStory blocks split by paragraph.",
+      "technologies": [],
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "scope": "project",
+      "category": "architecture",
+      "title": "Resume PDF served from public/DamanveerSingh_Resume.pdf; portable Node under .to...",
+      "content": "Resume PDF served from public/DamanveerSingh_Resume.pdf; portable Node under .tools/ optional for Windows environments without system npm.",
+      "technologies": [],
+      "tags": [],
+      "metadata": {}
+    }
+  ],
+  "normalization_report": {
+    "resume_ready_count": 8,
+    "rejected": [],
+    "warnings": []
+  }
+}
